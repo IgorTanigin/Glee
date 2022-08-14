@@ -3,4 +3,30 @@
 @import 'reset';
 @import 'global';
 
+.header{
+    padding: 50px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between
+    }
+}
+.menu{
+    padding-top: 10px;
+    &__list{
+        display: flex;
+        font-size: 15px;
+    }
+    &__list-item + .menu__list-item{
+        padding-left: 30px;
+    }
+    &__list-link{
+        color: $accent;
+    }
+}
+
+.user-nav{
+    display: flex;
+}
+
+
 @import 'media';
