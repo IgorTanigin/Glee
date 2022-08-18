@@ -100,8 +100,8 @@
         padding: 14px 36px;
     }
     &__img{
-        // max-width: 100%;
-        // display: inline-block;
+        max-width: 100%;
+        display: inline-block;
     }
     .slick-dots{
         display: flex;
@@ -190,7 +190,7 @@ footer{
                 fill: $accent;
             }
         }
-    // }
+
     &-title{
         color: $title;
         @extend %roboto-400;
