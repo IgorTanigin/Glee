@@ -1,29 +1,34 @@
-$default: #feefe2;
-$accent: #a3bbc8;
-$title-light: #243f4d;
+$default: #8d8d8d;
+$accent: #fe3e57;
+$title: #29282d;
+$bg: #f6f6f6;
 
-%rubik-400 {
-    font-family: 'Rubik-Regular', sans-serif;
+%quicksand-400 {
+    font-family: 'Quicksand-Regular', sans-serif;
     font-weight: 400;
 }
-%rubik-500 {
-    font-family: 'Rubik-Medium', sans-serif;
+%quicksand-500 {
+    font-family: 'Quicksand-Medium', sans-serif;
     font-weight: 500;
 }
-%rubik-700 {
-    font-family: 'Rubik-Bold', sans-serif;
+%roboto-400 {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+}
+%roboto-500 {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 500;
+}
+%roboto-700 {
+    font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
 }
 
-%DMsans-500 {
-    font-family: 'DMSans-Regular', sans-serif;
-    font-weight: 400;
-}
-%DMsans-500 {
-    font-family: 'DMSans-Medium', sans-serif;
-    font-weight: 500;
-}
-%DMsans-700 {
-    font-family: 'DMSans-Bold', sans-serif;
-    font-weight: 700;
+%btn {
+    background-color: $accent;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 26px;
+    @extend %roboto-400;
+    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
 }
