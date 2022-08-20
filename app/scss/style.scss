@@ -304,6 +304,119 @@
         }
     }
 
+    .product {
+        padding: 105px 0 120px;
+        text-align: center;
+        &__items{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 45px 30px;
+        }
+        &__link{
+            text-transform: uppercase;
+            display: inline-block;
+            color: $title;
+            margin-top: 55px;
+            padding: 14px 27px;
+            border: 1px solid $accent;
+        }
+    }
+    .product-item{
+        max-width: 370px;
+        width: 100%;
+        &__img-box{
+            position: relative;
+            height: 370px;
+            overflow: hidden;
+        }
+        &__link-box{
+            position: absolute;
+            left: 0;
+            right: 0;
+            box-shadow:  0px 5px 30px 0px rgba(152, 152, 152, 0.2);
+            width: 220px;
+            height: 50px;
+            margin: 0 auto;
+            border-radius: 22px;
+            bottom: 50px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateY(300%);
+            transition: all .3s;
+        }
+        &__link--line::before,
+        &__link--line::after{
+            content: '';
+            position: absolute;
+            background-color: #ececec;
+            height: 30px;
+            width: 1px;
+            top: 10px;
+        }
+        &__link--line::before{
+            left: 70px;
+        }
+        &__link--line::after{
+            right: 70px;
+        }
+        &__link{
+            display: inherit;
+            path{
+            transition: all .3s;
+            }
+        }
+        &__link:hover{
+            path{
+            fill: $accent;
+            }
+        }
+        &__images{
+            object-fit: cover;
+        }
+        &:hover{
+            .product-item__link-box{
+                transform: translateY(0);
+            }
+        }
+        &__title{
+            color: $title;
+            font-size: 22px;
+            padding: 15px 0 20px;
+        }
+        &__price{
+            display: flex;
+            justify-content: center;
+            @extend %roboto-400;
+        }
+        &__new-price{
+            padding: 0 12px;
+            color: $title;
+        }
+        &__old-price{
+            padding: 0 12px;
+            color: $default;
+            text-decoration: line-through;
+        }
+        &--sale{
+            .product-item__img-box::before{
+                content: "SALE";
+                @extend %btn;
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                line-height: 1;
+                padding: 7px 9px;
+                font-size: 16px;
+            }
+        }
+        .stars{
+            padding-top: 20px;
+            margin: 0 auto;
+        }
+    }
+
 
   
 footer{

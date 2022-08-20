@@ -4,4 +4,11 @@ $(function(){
         arrows: false,
         fade: true
     });
+
+    $(".stars").rateYo({
+        starWidth: "17px",
+        normalFill: "#ccccce",
+        ratedFill: "#ffc35b",
+        readOnly: true
+      });
 });
