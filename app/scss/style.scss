@@ -576,5 +576,19 @@ footer{
         vertical-align: middle;
     }
 }
+
+.top{
+    &__container{
+    max-width: 1700px;
+    margin: 0 auto;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0 130px;
+    text-align: center;
+    }
+    
+}
   
+
 @import 'media';

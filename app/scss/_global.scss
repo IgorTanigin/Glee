@@ -43,3 +43,47 @@ a{
     min-width: 570px;
     margin: 0 auto 55px;
 }
+.breadcrumbs{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 25px;
+    position: relative;
+&::before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/icons/home.png');
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 2px;
+}
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        color: #727272;
+        padding-right: 40px;
+        position: relative;
+        &:last-child{
+            padding-right: 0;
+            color: $accent;
+            &::after{
+                display: none;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url('../images/icons/angle-right.png');
+            width: 9px;
+            height: 10px;
+            right: 15px;
+            top: 8px;
+        }
+    }
+    &__link{
+        color: inherit;
+    }
+}
